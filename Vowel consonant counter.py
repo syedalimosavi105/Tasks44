@@ -1,0 +1,5 @@
+text = input("Enter a text: ")
+vowels = set("aeiouAEIOU")
+vowel_count = sum(1 for ch in text if ch in vowels)
+consonant_count = sum(1 for ch in text if ch.isalpha() and ch not in vowels)
+print(f"Vowels: {vowel_count}, Consonants: {consonant_count}")
